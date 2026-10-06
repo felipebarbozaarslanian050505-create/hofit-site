@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HoFit · cardápio da semana e lista de compras</title>
+<meta name="description" content="A HoFit monta o cardápio da semana pela sua meta, pelo seu gosto e pelo seu orçamento, e compara o preço da lista nos mercados de São Paulo.">
+<link rel="canonical" href="https://hofit.com.br/">
+<meta property="og:title" content="HoFit · cardápio da semana e lista de compras">
+<meta property="og:description" content="A HoFit monta o cardápio da semana pela sua meta, pelo seu gosto e pelo seu orçamento, e compara o preço da lista nos mercados de São Paulo.">
+<meta property="og:url" content="https://hofit.com.br/">
+<meta property="og:image" content="https://hofit.com.br/icone.png">
+<meta name="theme-color" content="#1f7a4c">
+<link rel="icon" href="/favicon.png">
+<link rel="apple-touch-icon" href="/icone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;700;800&display=swap" rel="stylesheet">
+<style>
+:root { --surface:#fbf8f3; --raised:#ffffff; --muted:#f3eee6; --line:#e6dfd3; --ink:#1d2a22; --ink-muted:#5b665f; --herb:#1f7a4c; --herb-soft:#e3f1e8; --tomato:#bb3e1a; --tomato-soft:#fdede5; }
+@media (prefers-color-scheme: dark) {
+  :root { --surface:#121814; --raised:#1b231e; --muted:#252f28; --line:#2e3831; --ink:#edf1ec; --ink-muted:#a9b4ac; --herb:#63c690; --herb-soft:#173826; --tomato:#ff8c61; --tomato-soft:#3a2219; }
+}
+* { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--surface); color: var(--ink); font: 400 17px/1.6 'Plus Jakarta Sans', system-ui, -apple-system, 'Segoe UI', sans-serif; }
+a { color: var(--herb); }
+.wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+header { padding: 20px 0; }
+.logo { display: inline-flex; align-items: center; gap: 10px; color: var(--ink); text-decoration: none; font-weight: 800; font-size: 22px; letter-spacing: -0.02em; }
+.logo svg { width: 36px; height: 36px; }
+.hero { padding: 40px 0 24px; display: grid; gap: 28px; grid-template-columns: 1.3fr 1fr; align-items: center; }
+.hero h1 { font-size: clamp(34px, 6vw, 54px); line-height: 1.06; letter-spacing: -0.03em; margin: 0 0 16px; font-weight: 800; }
+.hero p { color: var(--ink-muted); font-size: 19px; margin: 0 0 24px; max-width: 34ch; }
+.arte { aspect-ratio: 1; border-radius: 32px; background: var(--herb-soft); display: grid; place-items: center; }
+.arte svg { width: 70%; height: 70%; }
+.selo { display: inline-block; padding: 10px 18px; border-radius: 999px; background: var(--herb); color: var(--surface); font-weight: 700; font-size: 15px; }
+.cards { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); padding: 32px 0 48px; }
+.card { background: var(--raised); border: 1px solid var(--line); border-radius: 20px; padding: 22px; }
+.card h2 { font-size: 19px; margin: 0 0 6px; letter-spacing: -0.01em; }
+.card p { margin: 0; color: var(--ink-muted); font-size: 16px; }
+.ponto { width: 12px; height: 12px; border-radius: 50%; background: var(--tomato); margin-bottom: 14px; }
+.card:nth-child(even) .ponto { background: var(--herb); }
+main.doc { padding: 16px 0 56px; max-width: 720px; }
+.doc h1 { font-size: clamp(30px, 5vw, 42px); letter-spacing: -0.02em; margin: 8px 0 4px; line-height: 1.1; }
+.data { color: var(--ink-muted); font-size: 14px; margin: 0 0 20px; }
+.resumo { background: var(--herb-soft); border-radius: 18px; padding: 18px 20px; margin: 0 0 28px; }
+.doc h2 { font-size: 21px; margin: 32px 0 8px; letter-spacing: -0.01em; }
+.doc p { color: var(--ink-muted); margin: 0 0 12px; }
+footer { border-top: 1px solid var(--line); padding: 24px 0 40px; color: var(--ink-muted); font-size: 15px; }
+footer nav { display: flex; flex-wrap: wrap; gap: 8px 20px; margin-bottom: 10px; }
+@media (max-width: 720px) {
+  .hero { grid-template-columns: 1fr; padding-top: 16px; }
+  .arte { max-width: 180px; border-radius: 24px; }
+  .cards { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+<header><div class="wrap"><a class="logo" href="/"><svg viewBox="0 0 1024 1024" aria-hidden="true"><path d="M206 818 A372 372 0 0 1 566 458 A372 372 0 0 1 206 818 Z" fill="var(--herb)"/><circle cx="680" cy="344" r="140" fill="var(--tomato)"/></svg>HoFit</a></div></header>
+<main class="wrap">
+<section class="hero">
+<div>
+<h1>O cardápio da semana e a lista de compras, sem complicação.</h1>
+<p>A HoFit monta o que comer pela sua meta, pelo seu gosto e pelo seu orçamento, e mostra onde a lista sai mais barata.</p>
+<span class="selo">Em breve na App Store e no Google Play</span>
+</div>
+<div class="arte"><svg viewBox="0 0 1024 1024" aria-hidden="true"><path d="M206 818 A372 372 0 0 1 566 458 A372 372 0 0 1 206 818 Z" fill="var(--herb)"/><circle cx="680" cy="344" r="140" fill="var(--tomato)"/></svg></div>
+</section>
+<section class="cards">
+<article class="card"><div class="ponto"></div><h2>Cardápio da semana pronto</h2><p>Café, almoço, jantar e lanche montados pela sua meta de calorias, pelo seu orçamento e pelo tempo que você tem para cozinhar.</p></article>
+<article class="card"><div class="ponto"></div><h2>Aprende o seu gosto</h2><p>O que você não come sai do cardápio, o que você adora aparece mais, e as novidades chegam no seu ritmo.</p></article>
+<article class="card"><div class="ponto"></div><h2>Lista de compras e preços</h2><p>A lista sai pronta, por corredor, e o app compara o total nos mercados com loja online da sua região, com preços atualizados todo dia.</p></article>
+<article class="card"><div class="ponto"></div><h2>Receitas fáceis</h2><p>Mais de 170 receitas com passo a passo, porções ajustadas e preparos da semana que deixam o dia a dia em 15 minutos.</p></article>
+</section>
+</main>
+<footer><div class="wrap">
+<nav><a href="/privacidade/">Política de privacidade</a><a href="/termos/">Termos de uso</a><a href="mailto:felipebarbozaarslanian050505@hotmail.com">Contato</a></nav>
+<div>© 2026 HoFit</div>
+</div></footer>
+</body>
+</html>
